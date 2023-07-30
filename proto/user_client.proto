@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package user_client;
+
+option go_package = "github.com/requiemofthesouls/user-client/pb;userclientpb";
+
+message Client {
+  string ip = 1;
+  string host = 2;
+  string userAgent = 3;
+  string language = 4;
+  string location = 5;
+  string platform = 6;
+}
